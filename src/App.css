@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+body {
+  background: #f8b500;
+  text-align: center;
+}
+a {
+  color: #f9f8eb;
+  /* color: #bb2528; */
+  text-decoration: none;
+  transition: all ease-out 0.4s;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: all ease-in 0.3s;
+}
+
+button {
+  color: white;
+  background: #165b33;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 12px;
+  transition: all 0.4s ease-out;
+}
+
+button:hover {
+  background: #146b3a;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+
+header {
+  background: #bb2528;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3em 0.5em;
+}
+
+.link_to {
+  display: block;
+}
+
+.link_to span {
+  display: block;
+}
+
+.categories {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 9px;
+}
+
+.products span {
+  display: block;
+}
