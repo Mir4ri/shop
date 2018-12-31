@@ -11,7 +11,10 @@ class CartPage extends React.Component {
     return (
       <div>
         <h1>Cart</h1>
-
+        <br />
+        <div>
+          В корзині {productsQuantity} продуктів на суму {totalPrice} $
+        </div>
         {cartItems.map(item => (
           <CartItem
             key={item.product.id}
@@ -19,10 +22,6 @@ class CartPage extends React.Component {
             quantity={item.quantity}
           />
         ))}
-        <br />
-        <div>
-          В корзині {productsQuantity} продуктів на суму {totalPrice} $
-        </div>
       </div>
     );
   }

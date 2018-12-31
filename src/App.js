@@ -25,7 +25,7 @@ class App extends Component {
               </ul>
             </div>
             <div>
-              <input type="search" placeholder="find here :)" />
+              <input type="search" placeholder="Find there" />
             </div>
             <div className="link_to">
               <span>

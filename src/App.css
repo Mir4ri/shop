@@ -21,6 +21,10 @@ a:hover {
   transition: all ease-in 0.3s;
 }
 
+h1 {
+  font-size: 20px;
+}
+
 button {
   color: white;
   background: #165b33;
@@ -47,11 +51,23 @@ header {
 
 header input[type="search"] {
   width: 300px;
+  border: none;
+  padding: 0.2em 0.3em;
+  border-radius: 12px;
+}
+
+header input[type="search"]:focus {
+  outline: none;
+}
+
+header input[type="search"]::placeholder {
+  text-align: center;
+  color: #504646;
 }
 
 header div:nth-child(1) {
   text-align: left;
-  width: 320px;
+  width: 280px;
 }
 
 .link_to {
@@ -116,4 +132,20 @@ header div:nth-child(1) {
 .product_description span {
   display: block;
   padding: 5px 0;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.cart-item span {
+  margin: 10px 0;
+}
+
+.cart-item img {
+  width: 320px;
+  padding: 20px 0;
 }

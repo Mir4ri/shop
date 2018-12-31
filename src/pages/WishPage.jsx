@@ -11,7 +11,8 @@ class WishlistPage extends React.Component {
     return (
       <div>
         <h1>Wishlist</h1>
-
+        <br />
+        <div>У списку бажаного {productsQuantity} продуктів</div>
         {wishlistItems.map(item => (
           <WishlistItem
             key={item.product.id}
@@ -19,8 +20,6 @@ class WishlistPage extends React.Component {
             quantity={item.quantity}
           />
         ))}
-        <br />
-        <div>У списку бажаного {productsQuantity} продуктів</div>
       </div>
     );
   }

@@ -10,7 +10,7 @@ export function WishlistItem({ product, quantity, remove }) {
         <img src={product.image} alt={`product`} />
       </Link>
       {quantity}
-      <button onClick={remove}>x</button>
+      <button onClick={remove}>Remove</button>
     </div>
   );
 }
