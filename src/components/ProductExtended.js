@@ -2,9 +2,12 @@ import React from "react";
 
 export default function({ product }) {
   return (
-    <div>
-      <h1>{product.name}</h1>
-      {product.description}
+    <div className="product_description">
+      <span>
+        <h1>{product.name}</h1>
+      </span>
+      <span>{product.price}$ </span>
+      <span>{product.description}</span>
     </div>
   );
 }

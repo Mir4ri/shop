@@ -2,13 +2,15 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-export function WishlistItem({ product, quantity, addOne, removeOne, remove }) {
+export function WishlistItem({ product, quantity, remove }) {
   return (
-    <div>
-      <Link to={`/products/${product.id}`}>{product.name}</Link>
-      <button onClick={removeOne}>-1</button>
+    <div className="wishlist">
+      <Link to={`/products/${product.id}`}>
+        {product.name}
+        <img src={product.image} alt={`product`} />
+      </Link>
       {quantity}
-      <button onClick={addOne}>+1</button> <button onClick={remove}>x</button>
+      <button onClick={remove}>x</button>
     </div>
   );
 }

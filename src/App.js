@@ -17,12 +17,16 @@ class App extends Component {
       <Router>
         <div>
           <header>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-            </ul>
-
+            <div>
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <input type="search" placeholder="find here :)" />
+            </div>
             <div className="link_to">
               <span>
                 <CartButton />
