@@ -67,7 +67,7 @@ header input[type="search"]::placeholder {
 
 header div:nth-child(1) {
   text-align: left;
-  width: 280px;
+  width: 255px;
 }
 
 .link_to {

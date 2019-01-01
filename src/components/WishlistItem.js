@@ -2,14 +2,13 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-export function WishlistItem({ product, quantity, remove }) {
+export function WishlistItem({ product, remove }) {
   return (
     <div className="wishlist">
       <Link to={`/products/${product.id}`}>
         {product.name}
         <img src={product.image} alt={`product`} />
       </Link>
-      {quantity}
       <button onClick={remove}>Remove</button>
     </div>
   );
