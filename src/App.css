@@ -5,19 +5,20 @@
 }
 
 body {
-  background: #f8b500;
+  background: #fbedc2;
   text-align: center;
   height: 100%;
 }
+
 a {
-  color: #f9f8eb;
-  /* color: #bb2528; */
+  color: #3161a3;
   text-decoration: none;
   transition: all ease-out 0.4s;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #474f85;
+  /* text-decoration: underline; */
   transition: all ease-in 0.3s;
 }
 
@@ -41,7 +42,7 @@ button:hover {
 }
 
 header {
-  background: #bb2528;
+  background: #f4d2a4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,7 +68,11 @@ header input[type="search"]::placeholder {
 
 header div:nth-child(1) {
   text-align: left;
-  width: 255px;
+  width: 300px;
+}
+
+header div:nth-child(3) {
+  width: 280px;
 }
 
 .link_to {
@@ -110,9 +115,9 @@ header div:nth-child(1) {
 }
 
 .wishlist {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  padding: 10px 0;
+  padding: 10px 20px;
   width: 200px;
   margin: 0 auto;
 }
@@ -135,9 +140,10 @@ header div:nth-child(1) {
 }
 
 .cart-item {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  width: 400px;
+  padding: 20px 20px;
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -146,6 +152,13 @@ header div:nth-child(1) {
 }
 
 .cart-item img {
-  width: 320px;
+  width: 200px;
+  height: 200px;
+  padding: 20px 0;
+}
+
+.product_description img {
+  width: 200px;
+  height: 200px;
   padding: 20px 0;
 }

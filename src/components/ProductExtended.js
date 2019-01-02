@@ -6,6 +6,9 @@ export default function({ product }) {
       <span>
         <h1>{product.name}</h1>
       </span>
+      <span>
+        <img src={product.image} alt={`product`} />
+      </span>
       <span>{product.price}$ </span>
       <span>{product.description}</span>
     </div>
